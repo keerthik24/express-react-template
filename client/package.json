@@ -1,0 +1,11 @@
+{
+  "name": "client",
+  "version": "1.0.0",
+  "description": "Client template using React which is connected to Express, MySQL backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "react-scripts test"
+  },
+  "author": "Brian Boehnm",
+  "license": "MIT"
+}

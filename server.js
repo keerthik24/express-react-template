@@ -6,9 +6,10 @@
 // Modules
 // ---------------------------------------------------------->
 const express = require('express');
+const config = require('./config/config');
 const app = express();
-const port = 3000;
-const appName = 'Template';
+const expressPort = config.expressexpressPort;
+const appName = config.appname;
 
 // Server
 // ---------------------------------------------------------->
@@ -22,6 +23,6 @@ app.get('/', (req, res) => {
 // server routes
 
 // listen
-app.listen(port, () => {
-	console.log(`Server is listening on port http://localhost:${port}`);
+app.listen(expressPort, () => {
+	console.log(`Server is listening on port http://localhost:${expressPort}`);
 });
