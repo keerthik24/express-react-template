@@ -3,7 +3,7 @@
  * Used for initializing ecxpress server and connecting routes
  */
 
-// Modules
+// Imports
 // ---------------------------------------------------------->
 const express = require('express');
 const config = require('./config/config');
