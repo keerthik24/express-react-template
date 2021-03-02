@@ -29,7 +29,7 @@
   "homepage": "https://github.com/Zuckerwattederivat/express-react-template#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "sql": "^0.78.0"
+    "mysql2": "^2.2.5"
   },
   "devDependencies": {
     "concurrently": "^6.0.0",
