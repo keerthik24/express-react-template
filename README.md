@@ -15,7 +15,7 @@ Template/Boilerplate for a React client, using Webpack and Babel and connecting 
 * Frontend was built with [React](https://github.com/facebook/react), [Webpack](https://github.com/webpack/webpack), [Babel](https://github.com/babel/babel)
 * Backend was built with [Express](https://github.com/expressjs/express)
 * Backend was setup to connect to MySQL databases
-* Database queries are facilitated with SQL
+* Database queries are facilitated with [MySQL](https://github.com/mysqljs/mysql)
 
 ## Support :ambulance:
 
