@@ -10,7 +10,7 @@ Template/Boilerplate for a React client, using Webpack and Babel and connecting 
 
 ## Features :gem:
 
-* Working Express backend. Just add your MySQL database details and you are good to go.
+* Working Express backend. Just add your MySQL database details and you are good to go
 * Working React Frontend using Webpack and Babel
 * Frontend was built with [React](https://github.com/facebook/react), [Webpack](https://github.com/webpack/webpack), [Babel](https://github.com/babel/babel)
 * Backend was built with [Express](https://github.com/expressjs/express)
