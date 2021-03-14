@@ -6,14 +6,18 @@
 // Imports
 // ---------------------------------------------------------->
 import React, { Component } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './components/Pages/Home';
 
 // App Component
 // ---------------------------------------------------------->
 const App = () => {
 	return (
-		<div>
-			<h1>My React App</h1>
-		</div>
+		<Router>
+			<Switch>
+				<Route exact path='/' component={Home} />
+			</Switch>
+		</Router>
 	);
 };
 
