@@ -12,11 +12,14 @@ const config = require('./config');
 // ---------------------------------------------------------->
 const app = express();
 
+// init middleware
+app.use(express.json({ extended: true }));
+
 // Routes
 // ---------------------------------------------------------->
 // root
 app.get('/', (req, res) => {
-	res.send(`Welcome to the ${config.expressConfig.appName}`);
+  res.send(`Welcome to the ${config.expressConfig.appName}`);
 });
 
 // Start Server
@@ -25,6 +28,9 @@ app.get('/', (req, res) => {
 app.set('port', config.expressConfig.port);
 
 // listen
-app.listen(app.get('port'), () => {
-	console.log(`Server is listening on port http://localhost:${app.get('port')}`);
+app.listen(app.get('port'), err => {
+  if (err) throw err;
+  console.log(
+    `Server is listening on port http://localhost:${app.get('port')}`
+  );
 });
