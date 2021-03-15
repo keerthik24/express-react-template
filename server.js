@@ -6,22 +6,25 @@
 // Imports
 // ---------------------------------------------------------->
 const express = require('express');
-const config = require('./config/config');
-const app = express();
-const expressPort = config.expressPort;
-const appName = config.appname;
+const config = require('./config');
 
-// Server
+// Initialize
 // ---------------------------------------------------------->
-// initialize
+const app = express();
+
+// Routes
+// ---------------------------------------------------------->
+// root
 app.get('/', (req, res) => {
-	res.send(`Welcome to the ${appName}`);
+	res.send(`Welcome to the ${config.expressConfig.appName}`);
 });
 
-// routes
-// server routes
+// Start Server
+// ---------------------------------------------------------->
+// set port
+app.set('port', config.expressConfig.port);
 
 // listen
-app.listen(expressPort, () => {
-	console.log(`Server is listening on port http://localhost:${expressPort}`);
+app.listen(app.get('port'), () => {
+	console.log(`Server is listening on port http://localhost:${app.get('port')}`);
 });
