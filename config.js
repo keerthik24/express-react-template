@@ -4,16 +4,16 @@
  */
 
 module.exports = {
-	expressConfig: {
-		appName: 'Template App',
-		port: process.env.EXPRESSPORT || 3000
-	},
+  expressConfig: {
+    appName: 'Template App',
+    port: process.env.EXPRESSPORT || 3000,
+  },
 
-	sqlConfig: {
-		host: 'localhost',
-		port: 3333,
-		user: 'root',
-		password: 'root',
-		database: 'template-test'
-	}
+  sqlConfig: {
+    host: 'localhost',
+    port: 8889,
+    user: 'root',
+    password: 'root',
+    database: 'template-test',
+  },
 };
