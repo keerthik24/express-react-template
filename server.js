@@ -7,7 +7,6 @@
 // ---------------------------------------------------------->
 const express = require('express');
 const config = require('./config');
-const db = require('./lib/db');
 
 // Initialize
 // ---------------------------------------------------------->
@@ -30,7 +29,6 @@ app.set('port', config.expressConfig.port);
 
 // listen
 app.listen(app.get('port'), err => {
-  if (err) throw err;
   console.log(
     `Server is listening on port http://localhost:${app.get('port')}`
   );
