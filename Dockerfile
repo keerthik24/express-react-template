@@ -5,7 +5,7 @@ FROM node:14
 WORKDIR /app
 
 # Copy package.json and package-lock.json files to the working directory
-COPY package*/.json /app
+COPY package*.json /app
 
 # Install dependencies
 RUN npm install
@@ -14,7 +14,7 @@ RUN npm install
 COPY . .
 
 # Expose port 3000 (assuming your Express app listens on this port)
-EXPOSE 3000
+EXPOSE 3005
 
 # Command to start your Express.js application
 CMD ["node", "start"]
