@@ -17,4 +17,4 @@ COPY . .
 EXPOSE 3005
 
 # Command to start your Express.js application
-CMD ["node", "start"]
+CMD ["npm", "start"]
